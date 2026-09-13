@@ -1,0 +1,87 @@
+/* General Page Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator Box */
+.calculator {
+    width: 320px;
+    padding: 20px;
+    background: #222;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.calculator h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Display */
+#display {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 28px;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: #222;
+}
+
+/* Buttons Container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Buttons */
+button {
+    height: 55px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #444;
+    color: white;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: #666;
+}
+
+/* Equal Button */
+.equal {
+    grid-column: span 2;
+    background: #2196f3;
+    color: white;
+}
+
+.equal:hover {
+    background: #1976d2;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .calculator {
+        width: 90%;
+    }
+}
